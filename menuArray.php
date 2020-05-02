@@ -35,6 +35,90 @@ $foods =
             'ingredients' => 'grechka, meat, vegetables',
             'weight' => 800,
             'vegan' => false
+        ],
+        [
+            'name' => 'ketchonez',
+            'price' => 10,
+            'ingredients' => 'ketchup,mayonez',
+            'weight' => 100,
+            'vegan' => true
+        ],
+        [
+            'name' => 'mivina with ketchonez',
+            'price' => 30,
+            'ingredients' => 'mivina,ketchup,mayonez',
+            'weight' => 290,
+            'vegan' => true
+        ],
+        [
+            'name' => 'borsch',
+            'price' => 60,
+            'ingredients' => 'vegetables,potatoes,meat,beans',
+            'weight' => 400,
+            'vegan' => false
+        ],
+        [
+            'name' => 'sashlik',
+            'price' => 250,
+            'ingredients' => 'meat,onion',
+            'weight' => 200,
+            'vegan' => false
+        ],
+        [
+            'name' => 'somthng food',
+            'price' => 9999,
+            'ingredients' => 'smth ingrdnts',
+            'weight' => 9999,
+            'vegan' => false
+        ],
+        [
+            'name' => 'somthng food',
+            'price' => 9999,
+            'ingredients' => 'smth ingrdnts',
+            'weight' => 9999,
+            'vegan' => false
+        ],
+        [
+            'name' => 'somthng food',
+            'price' => 9999,
+            'ingredients' => 'smth ingrdnts',
+            'weight' => 9999,
+            'vegan' => false
+        ],
+        [
+            'name' => 'somthng food',
+            'price' => 9999,
+            'ingredients' => 'smth ingrdnts',
+            'weight' => 9999,
+            'vegan' => false
+        ],
+        [
+            'name' => 'somthng food',
+            'price' => 9999,
+            'ingredients' => 'smth ingrdnts',
+            'weight' => 9999,
+            'vegan' => true
+        ],
+        [
+            'name' => 'somthng food',
+            'price' => 9999,
+            'ingredients' => 'smth ingrdnts',
+            'weight' => 9999,
+            'vegan' => true
+        ],
+        [
+            'name' => 'somthng food',
+            'price' => 9999,
+            'ingredients' => 'smth ingrdnts',
+            'weight' => 9999,
+            'vegan' => true
+        ],
+        [
+            'name' => 'somthng food',
+            'price' => 9999,
+            'ingredients' => 'smth ingrdnts',
+            'weight' => 9999,
+            'vegan' => true
         ]
     ];
 
@@ -64,5 +148,40 @@ $drinks =
             'name' => 'samogonka',
             'price' => '30',
             'volume' => '100'
+        ],
+        [
+            'name' => 'smth drinks',
+            'price' => '9999',
+            'volume' => '1000'
+        ],
+        [
+            'name' => 'smth drinks',
+            'price' => '9999',
+            'volume' => '1000'
+        ],
+        [
+            'name' => 'smth drinks',
+            'price' => '9999',
+            'volume' => '1000'
+        ],
+        [
+            'name' => 'smth drinks',
+            'price' => '9999',
+            'volume' => '1000'
+        ],
+        [
+            'name' => 'smth drinks',
+            'price' => '9999',
+            'volume' => '1000'
+        ],
+        [
+            'name' => 'smth drinks',
+            'price' => '9999',
+            'volume' => '1000'
+        ],
+        [
+            'name' => 'smth drinks',
+            'price' => '9999',
+            'volume' => '1000'
         ]
     ];

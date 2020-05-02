@@ -10,6 +10,12 @@ public function __construct($name, $price, $ingredients, $weight, $volume)
     parent::__construct($name, $price, $ingredients, $weight);
     $this->volume = $volume;
 }
+public function getfullName(){
+    return $this->name;
+}
+public function getVolume(){
+    return $this->volume;
+}
 
     public function setDrinkName($name){
     $this->name = $name;

@@ -15,14 +15,14 @@ require_once "classes/HtmlWriter.php";
     <title>Full food information</title>
 </head>
 <body>
-<h1>Полная информация о еде</h1>
+<h1>Полная информация о напитках</h1>
 <h3>Через Html writer</h3>
-<?php foreach($foods as $food):?>
-    <?php if(!empty($food)) :?>
+<?php foreach($drinks as $drink):?>
+    <?php if(!empty($drink)) :?>
         <?php $write = new HtmlWriter(); ?>
     <?php endif; ?>
-    <?php $fullFood = new Food($food['name'], $food['price'],$food['ingredients'],$food['weight']);
-    echo $write->writeHtmlFood($fullFood);?>
+    <?php $fullDrink = new Drink($drink['name'],$drink['price'],NULL,NULL,$drink['volume']);
+    echo $write->writeHtmlDrink($fullDrink);?>
 <?php endforeach; ?>
 <a href="index.php">Главная</a>
 </body>

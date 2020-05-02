@@ -15,6 +15,14 @@ require_once "classes/HtmlWriter.php";
     <title>Menu</title>
 </head>
 <body>
+<div>
+    <h4>Разделы</h4>
+    <pre>
+    <a href="getFullFood.php">Полная информация о еде</a>
+    <a href="vegan.php">Вегетарианское</a>
+    <a href="getFullDrinks.php">Полная информация о напитках</a>
+    </pre>
+</div>
 <h1>Меню ресторана</h1>
 <?php foreach($foods as $foodKey => $food) :?>
     <?php if(!empty($foods)):?>
@@ -40,19 +48,6 @@ require_once "classes/HtmlWriter.php";
     <?php endif; ?>
 <?php endforeach; ?>
 <hr>
-<div>
-    <h4>Разделы</h4>
-    <pre>
-    <a href="#">Полная информация о еде</a>
-    <a href="vegan.php">Вегетарианское</a>
-    <a href="#">Полная информация о напитках</a>
-    </pre>
-</div>
-<?php
-$write = new HtmlWriter();
-$test = new Food('ssss', 111,'sdf',12);
-echo $write->writeHtmlFood($test);
 
-?>
 </body>
 </html>
