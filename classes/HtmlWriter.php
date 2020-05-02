@@ -3,14 +3,14 @@
 
 class HtmlWriter
 {
-    public function writeHtmlHotelRoom(HotelRoom $hroom)
+    public function writeHtmlFood(Food $foodz)
     {
         $get = '<div>';
         $get .= "<ol>";
-        $get .= "<li> Address: ".$hroom->address."</li>";
-        $get .= "<li> Price: ".$hroom->price. "</li>";
-        $get .= "<li> Description: ".$hroom->description. "</li>";
-        $get .= "<li> Room number: ".$hroom->roomNumber . "</li>";
+        $get .= "<li> Name: ".$foodz->getName()."</li>";
+        $get .= "<li> Price: ".$foodz->getPrice()."</li>";
+        $get .= "<li> Ingredients: ".$foodz->getIngr()."</li>";
+        $get .= "<li> Weight: ".$foodz->getWeight()."</li>";
         $get .= "</ol>";
         $get .= '</div>';
         return $get;

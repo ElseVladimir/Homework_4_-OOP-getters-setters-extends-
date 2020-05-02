@@ -5,7 +5,13 @@ class Drink extends Food
 {
 protected $volume = 0;
 
-public function setDrinkName($name){
+public function __construct($name, $price, $ingredients, $weight, $volume)
+{
+    parent::__construct($name, $price, $ingredients, $weight);
+    $this->volume = $volume;
+}
+
+    public function setDrinkName($name){
     $this->name = $name;
 }
 
