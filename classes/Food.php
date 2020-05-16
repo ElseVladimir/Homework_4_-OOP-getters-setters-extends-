@@ -1,17 +1,14 @@
 <?php
 
 
-class Food
+class Food extends Menu
 {
-protected $name = '';
-protected $price = 0;
-protected $ingredients = '';
-protected $weight = 0;
+    protected $ingredients = '';
+    protected $weight = 0;
 
 public function __construct($name, $price, $ingredients, $weight)
 {
-    $this->name = $name;
-    $this->price = $price;
+    parent::__construct($name,$price);
     $this->ingredients = $ingredients;
     $this->weight = $weight;
 }

@@ -3,7 +3,7 @@
 
 class HtmlWriter
 {
-    public function writeHtmlFood(Food $foodz)
+    static public function writeHtmlFood(Food $foodz)
     {
         $get = '<div>';
         $get .= "<ul>";
@@ -17,7 +17,7 @@ class HtmlWriter
         return $get;
     }
 
-    public function writeHtmlDrink(Drink $drinkz)
+    static public function writeHtmlDrink(Drink $drinkz)
     {
         $get = '<div>';
         $get .= "<ul>";

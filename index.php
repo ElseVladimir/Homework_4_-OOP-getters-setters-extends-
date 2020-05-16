@@ -1,5 +1,6 @@
 <?php
 require_once "menuArray.php";
+require_once "classes/Menu.php";
 require_once "classes/Food.php";
 require_once "classes/Drink.php";
 require_once "classes/HtmlWriter.php";
@@ -40,7 +41,7 @@ require_once "classes/HtmlWriter.php";
     <?php if(!empty($drinks)):?>
 
         <?php
-        $foodClass = new Drink($drinks['name'],$drinks['price'],NULL,NULL,$drinks['volume']);
+        $foodClass = new Drink($drinks['name'],$drinks['price'],$drinks['volume']);
         $foodClass->setDrinkName($drink['name']);
         echo $foodClass->getDrinkName();
         ?>

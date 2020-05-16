@@ -1,5 +1,6 @@
 <?php
 require_once "menuArray.php";
+require_once "classes/Menu.php";
 require_once "classes/Food.php";
 require_once "classes/Drink.php";
 require_once "classes/HtmlWriter.php";

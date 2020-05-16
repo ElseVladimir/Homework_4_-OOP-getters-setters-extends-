@@ -1,5 +1,6 @@
 <?php
 require_once "menuArray.php";
+require_once "classes/Menu.php";
 require_once "classes/Food.php";
 require_once "classes/Drink.php";
 require_once "classes/HtmlWriter.php";
@@ -19,10 +20,9 @@ require_once "classes/HtmlWriter.php";
 <h3>Через Html writer</h3>
 <?php foreach($drinks as $drink):?>
     <?php if(!empty($drink)) :?>
-        <?php $write = new HtmlWriter(); ?>
     <?php endif; ?>
-    <?php $fullDrink = new Drink($drink['name'],$drink['price'],NULL,NULL,$drink['volume']);
-    echo $write->writeHtmlDrink($fullDrink);?>
+    <?php $fullDrink = new Drink($drink['name'],$drink['price'],$drink['volume']);
+    echo HtmlWriter::writeHtmlDrink($fullDrink);?>
 <?php endforeach; ?>
 <a href="index.php">Главная</a>
 </body>
